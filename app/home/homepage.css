@@ -1,0 +1,211 @@
+
+  .carousel-imges {
+    display: flex;
+  }
+  .accordion-item-0 {
+    background: rgb(217 119 6);
+}
+.accordion-item-1 {
+    background: #666666;
+}
+.accordion-item-2 {
+    background: #417791;
+}
+.accordion-item {
+  color: #fff;
+  cursor: pointer;
+}
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Carousel Images */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.carousel-image {
+  width: calc(100% / 4);
+  max-width: 25%;
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+}
+
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Define transition property */
+}
+
+.accordion-content.open {
+  max-height: 1000px; /* Set an appropriate value for the maximum height */
+}
+
+.scale-0, .translate-y-\[-100\%\] {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / 11%);
+}
+.md\:grid-cols-main-page {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 56px) repeat(4, minmax(0, 280px)) minmax(0, 168px) minmax(0, 56px) minmax(0, 1fr);
+}
+
+@keyframes gridLine {
+  0% {
+      transform: translateY(-100%)
+  }
+
+  to {
+      transform: translateY(100%)
+  }
+}
+
+.animate-gridLine {
+  animation: gridLine 1s linear infinite
+}
+.text-hydro {
+  --tw-text-opacity: 1;
+  color: rgb(30 128 150 / var(--tw-text-opacity));
+}
+.tabular-nums {
+  --tw-numeric-spacing: tabular-nums;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)
+}
+@media (min-width: 768px) {
+  .h3 {
+      font-family:var(--font-headline);
+      font-size: 3rem;
+      text-transform: uppercase;
+      line-height: 1
+  }
+}
+
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #003B46;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  border-bottom: 1px solid #003B46;
+}
+
+.counter {
+  padding: 5rem 3rem 5rem 3rem;
+  background: #C4DFE6;
+}
+
+.counter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.counter-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #003B46;
+}
+.counter-column:last-child {
+  border-right: none;
+}
+
+.counter-column .number {
+  font-weight: 600;
+  font-size: 50px;
+  color: #003B46;
+}
+
+.counter-column span{
+  display: block;
+  font-size: 18px;
+  color:rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+  padding-left: 15px;
+}
+
+.counter-column .percentage {
+  font-style: 3rem;
+  font-weight: 400;
+  color: #003B46;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .hero h1 {
+      font-size: 3rem;
+  }
+  .counter-row{
+      grid-template-columns: 1fr 1fr;
+  }
+  .counter-column{
+      padding: 2rem 0 2rem 0;
+      border: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  
+  .counter{
+      padding: 1rem 1rem 2rem 1rem;
+  }
+  .counter-row{
+      grid-template-columns: 1fr;
+  }
+  .counter-column {
+      padding: 2rem 0 2rem 0;
+  }
+}
+.animate-gradient {
+  animation: gradient .3s ease-in-out forwards;
+  background: linear-gradient(90deg, var(--data-gradient-color, transparent) 50%, transparent 50%);
+  background-size: 200% 100%;
+}
+.text-fusion {
+  --tw-text-opacity: 1;
+  color: rgb(226 118 58/var(--tw-text-opacity))
+}
+.animate-spinX {
+  animation: spinX 8s linear infinite;
+}
+.border-fusion {
+  --tw-border-opacity: 1;
+  width: max-content;
+  border-color: rgb(226 118 58 / var(--tw-border-opacity));
+}
+
+.bg-eggshell {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 252 245 / var(--tw-bg-opacity));
+ 
+}
+@keyframes spinX {
+  0% {
+      transform: perspective(500px) rotateX(0deg)
+  }
+
+  to {
+      transform: perspective(500px) rotateX(1turn)
+  }
+}
